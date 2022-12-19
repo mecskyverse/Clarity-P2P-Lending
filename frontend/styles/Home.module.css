@@ -1,5 +1,4 @@
 .container {
-
   padding: 0 2rem;
 }
 /* .connect-btn {
@@ -119,7 +118,6 @@
 }
 
 .components {
-  flex-direction:row;
   margin-top: 2rem;
   text-align: center;
 }
