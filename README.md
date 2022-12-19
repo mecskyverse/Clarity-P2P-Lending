@@ -19,3 +19,13 @@ Now run ``` clarinet integrate``` in backend terminal make sure you have docker 
 ![image](https://user-images.githubusercontent.com/91150257/208524774-cdd979c6-4893-4635-a9b0-f5d64c4d3976.png)
 
 ### Step-4 
+
+Now again go to frontend terminal and run ```npm start```
+open localhost//3000 and you are good to go.
+
+
+### Note:- You must have a stacks wallet installed on your system preferably hiro wallet.
+
+## Project functionalites
+
+coming soon....
