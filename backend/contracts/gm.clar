@@ -14,9 +14,9 @@
 ;;This function will add the user after which we can perform transaction with him
 (define-public (add-user (address principal) ) 
     (begin  
-        (asserts! (is-eq tx-sender contract-owner) err-owner-only)
-        (asserts!  (not (is-eq address contract-owner)) err-owner-cannot-be-user)
-        (map-set user-balance address 0)
+        (asserts! (is-eq tx-sender contract-owner) err-owner-only) ;;check for the owner priviledge
+        (asserts!  (not (is-eq address contract-owner)) err-owner-cannot-be-user) ;;check for valid address
+        (map-set user-balance address 0) ;;setting the new user
         (ok "Success")
     )
 )
@@ -45,11 +45,11 @@
     )
 )
 
-
+;; THis function will help to read the user balance
 (define-read-only (get-user-balance (address principal)) 
   (map-get? user-balance address) 
 )
-
+;;This function will return the total token balance
 (define-read-only (get-token-balance)
   (var-get token-money)
 )
