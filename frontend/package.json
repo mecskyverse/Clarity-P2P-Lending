@@ -12,6 +12,7 @@
     "@stacks/connect-react": "^20.0.0",
     "@stacks/network": "^5.0.0",
     "@stacks/transactions": "^5.0.1",
+    "@use-it/interval": "^1.0.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
